@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Időpontfoglalás - TÜF Szerviz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="pics/tüf.png" alt="TÜF Szerviz logó" class="logo" style="height: 70px;">
+                    <div class="company-name">
+                        TÜF <br> Szerviz
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">FŐOLDAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="szolgaltatasok.html">MŰSZAKI VIZSGA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="idopontfoglalas.html">IDŐPONTFOGLALÁS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rolunk.html">RÓLUNK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kapcsolat.html">KAPCSOLAT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-4">
+        <section class="appointment">
+            <h2 class="highlight">Foglaljon időpontot:</h2>
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="service">Szolgáltatás:</label>
+                    <select id="service" name="service" class="form-control" required>
+                        <option value="" disabled selected>Válassza ki a szolgáltatást</option>
+                        <option value="olajcsere">Olajcsere</option>
+                        <option value="fékrendszer-javítás">Fékrendszer javítás</option>
+                        <option value="motordiagnosztika">Motordiagnosztika</option>
+                        <option value="futómű-beállítás">Futómű beállítás</option>
+                        <option value="akkumulátor-csere">Akkumulátor csere</option>
+                        <option value="klíma-töltés">Klíma töltés</option>
+                        <option value="téli-gumi-felszerelés">Téli gumi felszerelés</option>
+                        <option value="nyári-gumi-felszerelés">Nyári gumi felszerelés</option>
+                        <option value="szűrők-cseréje">Olaj- és levegőszűrők cseréje</option>
+                        <option value="karosszéria-javítás">Karosszéria javítás</option>
+                        <option value="fényezés">Fényezés</option>
+                        <option value="műszaki-vizsga">Műszaki vizsga</option>
+                        <option value="fékbetét-csere">Fékbetét csere</option>
+                        <option value="szervokormány-javítás">Szervokormány javítás</option>
+                        <option value="tartálytiszítás">Üzemanyagtartály tisztítás</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Dátum:</label>
+                    <input type="text" id="date" name="date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Időpont:</label>
+                    <select id="time" name="time" class="form-control" required>
+                        <option value="">Válasszon időpontot</option> 
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Név:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefonszám:</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Időpont foglalása</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p><strong>&copy; 2024 TÜF Szerviz</strong></p>
+            <p><strong>Cím:</strong> 4400 Nyíregyháza, Debreceni út 107.</p>
+            <p><strong>Telefon:</strong> +36 42 59 50 59</p>
+            <p><strong>Email:</strong> szerviz@tufkft.hu</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

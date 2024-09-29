@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Világos háttérszín */
+    color: #333; /* Sötét szöveg */
+}
+
+.navbar {
+    padding: 15px 20px; /* Csökkentett padding */
+    font-size: 18px;
+    background-color: #0071b3 !important; /* Bosch kék */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Árnyék a navbar alatt */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: black; /* Fekete szín a névhez */
+    margin-left: 10px;
+    line-height: 1.2;
+}
+
+.navbar-nav .nav-link {
+    color: black !important; /* Fekete szín a menüpontokhoz */
+    margin: 0 20px; /* Növeltük a távolságot a menüpontok között */
+    padding: 10px 0; /* Kicsi padding a linkek körül */
+    text-transform: uppercase; /* Nagybetűs formátum */
+    transition: color 0.3s; /* Szín átmenet a hoverhez */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff0000 !important; /* Bosch piros hover szín */
+}
+
+.hero {
+    margin: 40px 0; /* Növelt térköz a hero szekció körül */
+    text-align: center; /* Középre igazítás */
+}
+
+.hero h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0071b3; /* Bosch kék */
+    margin-bottom: 20px; /* Térköz a cím alatt */
+}
+
+.hero img {
+    max-width: 80%; /* A kép szélessége 80% */
+    height: auto; /* Magasság automatikus */
+    margin: 20px auto; /* Középre igazítás */
+    display: block; /* Blokk szintű elem a középre igazításhoz */
+}
+
+.hero a {
+    margin-top: 20px; /* Térköz a gomb és a kép között */
+}
+
+.services {
+    padding: 40px 0; /* Térköz a szekció körül */
+    margin: 40px 0; /* Térköz a szolgáltatások szekció előtt és után */
+}
+
+.service-container {
+    display: flex; /* Flexbox használata */
+    align-items: center; /* Képek és szövegek középre igazítása a sorban */
+    margin-bottom: 20px; /* Térköz a szolgáltatások között */
+    padding: 0 20px; /* Térköz a tartalom körül */
+}
+
+.service-image {
+    border-radius: 10px; /* Lekerekített sarkok */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animációs effektus */
+    width: 100%; /* Kép szélessége 100% */
+    height: 200px; /* Kép magassága 200px (vagy a kívánt méret) */
+    object-fit: cover; /* A képek arányának megőrzése */
+    margin-bottom: 20px; /* Térköz a képek között */
+}
+
+.service-image:hover {
+    transform: scale(1.05); /* Nagyobb lesz hoverre */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Árnyék hoverre */
+}
+
+/* Szolgáltatások cím */
+.services h2 {
+    font-size: 2.5rem; /* Cím méret növelése */
+    margin-bottom: 50px; /* Térköz a cím és a tartalom között */
+    text-align: center; /* Középre igazítás */
+    color: #ff0000; /* Bosch piros szín */
+    font-weight: bold; /* Vastag betűtípus */
+    text-transform: uppercase; /* Nagybetűs formátum */
+    letter-spacing: 2px; /* Leválasztás a betűk között */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Árnyék a szöveg alatt */
+}
+
+
+/* Szövegek a szolgáltatások alatt */
+.services p {
+    font-size: 1rem; /* Szöveg méret */
+    color: #555; /* Szöveg színe */
+}
+
+/* H1 stílus */
+h1 {
+    font-size: 2.5rem; /* A betűméret megnövelése */
+    color: #0071b3; /* Bosch kék szín */
+    font-weight: bold; /* Felemeltebb súly */
+    text-align: center; /* Középre igazítás */
+    margin: 20px 0; /* Térköz a cím körül */
+    text-transform: uppercase; /* Nagybetűs formátum */
+    letter-spacing: 1px; /* Leválasztás a betűk között */
+}
+
+footer {
+    background-color: #0071b3 !important; /* Világos háttérszín a lábléchez */
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center; /* Középre igazított lábléc */
+}
+
+footer p {
+    color: black;/* Sötét szöveg a láblécben */
+}
+
+.about {
+    margin-top: 5rem;
+    display: flex; /* Flexbox a szélesebb elrendezéshez */
+    align-items: flex-start; /* Felső igazítás */
+    flex-wrap: wrap;
+}
+.about-content {
+    max-width: 600px; /* Max szélesség a szöveg számára */
+    margin-right: 3rem; /* Kép és szöveg közötti távolság */
+}
+.about img {
+    max-width: 400px; /* Kép max szélessége */
+    height: auto; /* Magasság automatikus */
+    margin-bottom: 1rem; /* Kép alsó távolság */
+    float: right; /* Kép jobbra úszik, hogy a szöveg körbefogja */
+}
+
+.highlight {
+    font-size: 2rem; /* Cím méret növelése */
+    margin-bottom: 40px; /* Térköz a cím és a tartalom között */
+    color: #ff0000; /* Bosch piros szín */
+    font-weight: bold; /* Vastag betűtípus */
+    text-transform: uppercase; /* Nagybetűs formátum */
+    letter-spacing: 2px; /* Leválasztás a betűk között */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Árnyék a szöveg alatt */
+}
+
